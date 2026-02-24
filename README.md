@@ -1,5 +1,7 @@
 # Fullstack Mobiltelefon CRUD Alkalmazás
 
+![CI Status](https://github.com/MrSoosGabor/FullStack-app-CICD/workflows/Full%20Stack%20CI/badge.svg)
+
 Egy teljes stack webalkalmazás mobiltelefon adatok kezelésére React + Vite frontend és Node.js + Express + MongoDB backend használatával.
 
 ## 🚀 Funkciók
@@ -9,6 +11,7 @@ Egy teljes stack webalkalmazás mobiltelefon adatok kezelésére React + Vite fr
 - ✅ Mobiltelefon módosítása
 - ✅ Mobiltelefon törlése
 - ✅ Gyártók kezelése
+- ✅ **CI/CD Pipeline** - Automatikus deployment GitHub Actions-szel
 
 ## 📋 Technológiák
 
@@ -181,9 +184,31 @@ FullStack app CICD/
 - `DELETE /api/mobilok/:id` - Mobiltelefon törlése
 - `GET /api/gyartok/:gyartoId/mobilok` - Egy gyártó telefonjai
 
+## 🔄 CI/CD Pipeline
+
+Ez a projekt automatikus CI/CD pipeline-t használ GitHub Actions segítségével.
+
+**Részletes dokumentáció:** [CI-CD-DOCS.md](CI-CD-DOCS.md)
+
+### Funkciók:
+- ✅ Automatikus tesztelés minden commit-nál
+- ✅ Külön workflow backend és frontend változásokhoz
+- ✅ Automatikus deployment Render (backend) és Vercel (frontend) platformokra
+- ✅ Build artifact mentés
+- ✅ PR preview deployment-ek
+
+### Workflow-k:
+- **Backend CI** - Backend validáció és deploy
+- **Frontend CI** - ESLint, build, deploy
+- **Full Stack CI** - Integrált pipeline
+
 ## 🤝 Közreműködés
 
 Pull request-ek üdvözöltek! Nagyobb változtatások esetén kérlek először nyiss egy issue-t.
+
+**CI követelmények:**
+- Minden PR automatikusan tesztelve van
+- A CI-nek zöldnek kell lennie merge előtt
 
 ## 📄 Licenc
 
