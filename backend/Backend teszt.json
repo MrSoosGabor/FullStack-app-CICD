@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "623283ad-bfc8-4808-8249-2a91b984f145",
+		"name": "Backend teszt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16408305"
+	},
+	"item": [
+		{
+			"name": "Összes mobilgyártó lekérése",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/gyartok",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"gyartok"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Összes mobil lekérése",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/telefonok",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"telefonok"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Új telefon felvitele",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 21,\r\n    \"nev\": \"Samsung S25\",\r\n    \"ar\": 350000,\r\n    \"gyartId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/telefonok",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"telefonok"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adott ID-jű gyártó telefonjai",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api//gyartok/1/telefonok",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"",
+						"gyartok",
+						"1",
+						"telefonok"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adott ID-jű telefon frissítése",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"szin\": \"piros\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/telefonok/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"telefonok",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adott ID-jű telefon törlése",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/telefonok/21",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"telefonok",
+						"21"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
