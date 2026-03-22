@@ -213,3 +213,4 @@ Pull request-ek üdvözöltek! Nagyobb változtatások esetén kérlek először
 ## 📄 Licenc
 
 MIT
+
