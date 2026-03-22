@@ -8,13 +8,11 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#667eea"
-      }
+      },
+      "package": "com.malag.mobilapp"
     },
     "web": {
       "bundler": "metro"
-    },
-    "plugins": [
-      "expo-asset"
-    ]
+    }
   }
 }
