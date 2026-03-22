@@ -1,0 +1,5 @@
+# Exclude files that don't belong to the mobile app build
+node_modules/
+.expo/
+android/
+ios/

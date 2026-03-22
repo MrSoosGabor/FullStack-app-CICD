@@ -1,0 +1,7 @@
+# Exclude non-mobile directories from EAS archive upload
+backend/
+frontend/
+.github/
+CI-CD-DOCS.md
+DEPLOYMENT-GUIDE.md
+README.md
